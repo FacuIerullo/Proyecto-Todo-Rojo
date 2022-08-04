@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="icon" href="../img/diablo.ico">
+  <script src="https://kit.fontawesome.com/7ece02fd5b.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body> 
+  <header>
+    <h1 class="tituloDePagina">Todo Rojo</h1>
+       <nav class="menu">
+           <ul>
+            <li><a href=../index.html>Inicio</a></li>
+            <li><a href=noticias.html>Noticias</a></li>
+            <li><a href=partidos.html>Partidos</a></li>
+            <li><a href=inferiores.html>Inferiores</a></li>
+            <li><a href=contacto.html>Contacto</a></li>
+           </ul>
+          </nav>
+ </header>
+ <main>
+  <h2 class="tituloSeccion">CONTACTO</h2>
+  <div class="contacto">
+    <p>Mi nombre es Facundo Ierullo y manejo la página de Todo Rojo, tengo 22 años y soy periodista deportivo recibido en el Círculo de Periodistas Deportivos en el año 2021. </p>
+    <ul>
+        <li>
+        Email: ierullofacu@gmail.com
+        </li>
+        <li>
+        Instagram: Facuierullo
+        </li>
+    </ul>
+  </div>  
+  <div class="mensaje">
+    <p>Deja tu mensaje</p>
+   <form action="formulario.php" method="post"></form> 
+    <label for="nombre" class="colocar_nombre">Nombre</label>
+<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+
+<label for="email" class="colocar_email">Email</label>
+<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+
+<label for="asunto" class="colocar_asunto">Asunto</label>
+<input type="text" name="introducir_asunto" id="asunto" required="obligatorio" placeholder="Escribe un asunto">
+
+<label for="mensaje" class="colocar_mensaje">Mensaje</label>
+<textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+  </div>
+</main>
+<footer> 
+  <ul>
+     Todo Rojo <a href=contacto.html>Facundo Ierullo</a> 
+     <li><a class="facebook" href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+     <li><a class="twitter" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+     <li><a class="instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+  </ul>
+</footer>
+</body>
+</html>

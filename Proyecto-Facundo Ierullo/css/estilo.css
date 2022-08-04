@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+header{
+    background-color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    background-image: url(../img/diablo.png);
+    background-size: contain;
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+.barra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.barra__tituloDePagina a{
+    font-size: 50px;
+    display: flex;
+    color: whitesmoke;
+    box-sizing: content-box;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.barra__menu{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    margin-left: 70%;
+}
+.barra__menu a{
+    padding: 1.5rem;
+    text-decoration: none;
+    color: white;
+    flex-wrap: wrap;
+}
+.barra__menu li:hover{
+    color: black;
+    background-color: coral;
+}
+main{
+    height: 220vh;
+    width: 100%;
+    background-color: red;
+    background-image: url(../img/todorojo.png);
+    background-size: cover;
+}
+.tituloDeSeccion{
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-area: auto;
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+img{
+    border: solid black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid div{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.tituloDeNoticia{
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+    width: 70%;
+    text-shadow: 0 0 5px black;
+    visibility: hidden;
+} 
+.grid div:hover> .tituloDeNoticia{
+    visibility: visible;
+}
+.partidos{
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 25px;
+    flex-direction: row;
+    align-items: center;
+}
+.partidos ul li{
+    border-style: solid;
+    border-color: white;
+    list-style: none;
+    padding: 1rem;
+    margin-right: 10%;
+}
+.partidos__resumen{
+    padding: 1rem;
+}
+footer{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    border-top: solid black;
+}
+footer ul li{
+    list-style: none;
+    display: inline;
+}
+
+@media screen and (max-width: 576px){
+   header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 12%;
+    background-size: contain;
+   }
+   .barra__tituloDePagina{
+    display: flex;
+
+   }
+   .barra__menu{
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    font-size: 17px;
+   }
+   .barra__menu a{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .video{
+    height: 40%;
+    width: 70%;
+   }
+   .partidos__lista{
+    height: 40%;
+    width: 50%;
+    font-size: 15px;
+    padding: 1rem;
+   }
+}
+@media screen and (min-width: 568px) and (max-width: 768px){
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 12%;
+        background-size: contain;
+       }
+       .barra__tituloDePagina{
+        display: flex;
+    
+       }
+       .barra__menu{
+        display: flex;
+        justify-content: left;
+        margin: 0;
+        font-size: 25px;
+       }
+       .barra__menu a{
+        display: flex;
+        flex-wrap: wrap;
+       }
+       .video{
+        width: 100%;
+       }
+       .partidos__lista{
+        height: 60%;
+        width: 50%;
+        font-size: 25px;
+        padding: 1rem;
+       }
+}
