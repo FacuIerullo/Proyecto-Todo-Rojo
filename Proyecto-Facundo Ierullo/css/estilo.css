@@ -160,7 +160,7 @@ footer ul li{
     display: inline;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (min-width: 300px) and (max-width: 659px){
    header{
     display: flex;
     flex-direction: column;
@@ -206,7 +206,7 @@ footer ul li{
     font-size: 14px;
    }
 }
-@media screen and (min-width: 568px) and (max-width: 768px){
+@media screen and (min-width: 660px) and (max-width: 768px){
     header{
         display: flex;
         flex-direction: column;
@@ -222,7 +222,7 @@ footer ul li{
         display: flex;
         justify-content: left;
         margin: 0;
-        font-size: 25px;
+        font-size: 23px;
        }
        .barra__menu a{
         display: flex;
