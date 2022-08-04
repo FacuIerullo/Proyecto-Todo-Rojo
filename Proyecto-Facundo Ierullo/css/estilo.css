@@ -88,6 +88,7 @@ img{
     width: 70%;
     text-shadow: 0 0 5px black;
     visibility: hidden;
+    user-select: none;
 
 } 
 .grid div:hover> .tituloDeNoticia{
@@ -111,6 +112,42 @@ img{
 }
 .partidos__resumen{
     padding: 1rem;
+}
+.lista{
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.lista li{
+    padding: 1rem;
+    border: solid white;
+    list-style: none;
+}
+.noticias{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+.noticias__img-1{
+    height: 40%;
+    width: 80%;
+}
+.noticias__titulo-1{
+    display: flex;
+    position: relative;
+    font-size: 40px;
+}
+.noticias__p-1{
+    display: flex;
+    position: relative;
+    font-size: 25px;
 }
 footer{
     display: flex;
@@ -163,6 +200,10 @@ footer ul li{
     width: 50%;
     font-size: 15px;
     padding: 1rem;
+   }
+   .lista{
+    height: 20%;
+    font-size: 14px;
    }
 }
 @media screen and (min-width: 568px) and (max-width: 768px){
