@@ -1,3 +1,7 @@
+$color1: red;
+$color2: coral;
+$color3: whitesmoke;
+$color4: black;
 
 *{
     box-sizing: border-box;
@@ -6,7 +10,7 @@
     list-style: none;
  }
 .navbar{
-    background-color: red;
+    background-color: $color1;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: url(../img/diablo.png);
     background-size: contain;
@@ -17,8 +21,8 @@
         text-decoration: none;
     }
     h1 a:hover{
-        background-color: coral;
-        color: white;
+        background-color: $color2;
+        color: $color3;
         text-decoration: none;
     }
     .menu{
@@ -28,11 +32,11 @@
         li a{
             padding: 1.5rem;
             text-decoration: none;
-            color: white;
+            color: $color3;
         }
         li:hover{
-            color: black;
-            background-color: coral;
+            color: $color4;
+            background-color: $color2;
         }
     }
 }
@@ -40,20 +44,20 @@
 main{
     height: 225vh;
     width: 100%;
-    background-color: red;
+    background-color: $color1;
     background-image: url(../img/todorojo.png);
     background-size: cover;
 
     .tituloDeSeccion{
         font-size: 35px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
+        color: $color3;
         text-decoration: none;
         font-weight: bold;
     }
     .tituloDeSeccion:hover{
-        background-color: coral;
-        color: white;
+        background-color: $color2;
+        color: $color3;
         text-decoration: none;
         
     }
@@ -64,7 +68,7 @@ main{
         grid-area: auto;
         padding: 1rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
+        color: $color3;
 
         img{
             width: 100%;
@@ -88,7 +92,7 @@ main{
         position: absolute;
         text-align: center;
         width: 70%;
-        text-shadow: 0 0 5px black;
+        text-shadow: 0 0 5px $color4;
         visibility: hidden;
         user-select: none;
         text-align: center;
@@ -110,18 +114,18 @@ main{
         display: flex;
         justify-content: space-between;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
+        color: $color3;
         font-size: 25px;
         flex-direction: row;
         align-items: center;
 
         ul li{
             border-style: solid;
-            border-color: white;
+            border-color: $color3;
             list-style: none;
             padding: 1rem;
             margin-right: 10%;
-            background-color: red;
+            background-color: $color1;
         }
     }
     .partidos__resumen{
@@ -131,22 +135,22 @@ main{
         display: flex;
         justify-content: space-between;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
+        color: $color3;
         font-size: 15px;
         display: flex;
         flex-direction: column;
 
         li{
             padding: 1rem;
-            border: solid white;
+            border: solid $color3;
             list-style: none;
-            background-color: red;
+            background-color: $color1;
         }
     }
 
     .noticias{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
+        color: $color3;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -169,22 +173,22 @@ main{
     }
     .partidos2022{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
+        color: $color3;
         border-style: solid;
 
         li{
         border-style: solid;
         padding: 10px;
-        background-color: red;
+        background-color: $color1;
         }
     }
     .contacto{
         padding: 5px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
+        color: $color3;
 
         li{
-            background-color: red;
+            background-color: $color1;
             padding: 5px;
         }
     }
@@ -193,7 +197,7 @@ footer{
     display: flex;
     font-size: 20px;
     justify-content: center;
-    border-top: solid black;
+    border-top: solid $color4;
 
     ul li{
         list-style: none;
