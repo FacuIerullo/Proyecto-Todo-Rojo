@@ -1,218 +1,228 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    list-style: none;
- }
-.navbar{
-    background-color: red;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-image: url(../img/diablo.png);
-    background-size: contain;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.tituloDePagina a{
-    font-size: 50px;
-    color: whitesmoke;
-    text-decoration: none;
+.navbar {
+  background-color: red;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-image: url(../img/diablo.png);
+  background-size: contain;
 }
-.tituloDePagina a:hover{
-    background-color: coral;
-    color: white;
-    text-decoration: none;
+.navbar h1 a {
+  font-size: 50px;
+  color: whitesmoke;
+  text-decoration: none;
 }
-
-.menu{
-    list-style: none;
-    font-size: 25px;
+.navbar h1 a:hover {
+  background-color: coral;
+  color: white;
+  text-decoration: none;
 }
-.menu li a{
-    padding: 1.5rem;
-    text-decoration: none;
-    color: white;
+.navbar .menu {
+  list-style: none;
+  font-size: 25px;
 }
-.menu li:hover{
-    color: black;
-    background-color: coral;
+.navbar .menu li a {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: white;
 }
-main{
-    height: 225vh;
-    width: 100%;
-    background-color: red;
-    background-image: url(../img/todorojo.png);
-    background-size: cover;
-}
-.tituloDeSeccion{
-    font-size: 35px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-.tituloDeSeccion:hover{
-    background-color: coral;
-    color: white;
-    text-decoration: none;
-    
-}
-.grid{
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-template-rows: 50% 50%;
-    grid-area: auto;
-    padding: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-}
-img{
-    width: 100%;
-    height: 100%;
-}
-.grid div{
-    display: flex;
-    position: relative;
-    align-items: center;
-    padding: 0.5rem;
-}
-.tituloDeNoticia{
-    font-size: 25px;
-    position: absolute;
-    text-align: center;
-    width: 70%;
-    text-shadow: 0 0 5px black;
-    visibility: hidden;
-    user-select: none;
-    text-align: center;
-    padding: 1rem;
-
-} 
-.grid div:hover> .tituloDeNoticia{
-    visibility: visible;
-    text-align: center;
-    padding: 1rem;
-    transition: .5s;
-    opacity: 1;
-}
-.partidos{
-    display: flex;
-    justify-content: space-between;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    font-size: 25px;
-    flex-direction: row;
-    align-items: center;
-}
-.partidos ul li{
-    border-style: solid;
-    border-color: white;
-    list-style: none;
-    padding: 1rem;
-    margin-right: 10%;
-    background-color: red;
-}
-.partidos__resumen{
-    padding: 1rem;
-}
-.lista{
-    display: flex;
-    justify-content: space-between;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-}
-.lista li{
-    padding: 1rem;
-    border: solid white;
-    list-style: none;
-    background-color: red;
-}
-.noticias{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
-}
-.noticias__img-1{
-    height: 40%;
-    width: 80%;
-}
-.noticias__titulo-1{
-    display: flex;
-    position: relative;
-    font-size: 40px;
-}
-.noticias__p-1{
-    display: flex;
-    position: relative;
-    font-size: 25px;
-}
-.partidos2022{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    border-style: solid;
-}
-.partidos2022 li{
-    border-style: solid;
-    padding: 10px;
-    background-color: red;
-}
-.contacto{
-    padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-}
-.contacto li{
-    background-color: red;
-    padding: 5px;
-}
-footer{
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-    border-top: solid black;
-}
-footer ul li{
-    list-style: none;
-    display: inline;
+.navbar .menu li:hover {
+  color: black;
+  background-color: coral;
 }
 
-@media screen and (min-width: 300px) and (max-width: 659px){
-    main{
+main {
+  height: 225vh;
+  width: 100%;
+  background-color: red;
+  background-image: url(../img/todorojo.png);
+  background-size: cover;
+}
+main .tituloDeSeccion {
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+main .tituloDeSeccion:hover {
+  background-color: coral;
+  color: white;
+  text-decoration: none;
+}
+main .grid {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 50% 50%;
+  grid-area: auto;
+  padding: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+main .grid img {
+  width: 100%;
+  height: 100%;
+}
+main .grid div {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 0.5rem;
+}
+main .grid div img:hover {
+  width: 80%;
+  transition: 0.5s;
+  box-shadow: black;
+  filter: brightness(50%);
+}
+main .tituloDeNoticia {
+  font-size: 25px;
+  position: absolute;
+  text-align: center;
+  width: 70%;
+  text-shadow: 0 0 5px black;
+  visibility: hidden;
+  user-select: none;
+  text-align: center;
+  padding: 1rem;
+}
+main .imagen_fija:hover {
+  width: 100%;
+}
+main .grid div:hover > .tituloDeNoticia {
+  visibility: visible;
+  text-align: center;
+  padding: 1rem;
+  transition: 0.5s;
+  opacity: 1;
+}
+main .partidos {
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 25px;
+  flex-direction: row;
+  align-items: center;
+}
+main .partidos ul li {
+  border-style: solid;
+  border-color: white;
+  list-style: none;
+  padding: 1rem;
+  margin-right: 10%;
+  background-color: red;
+}
+main .partidos__resumen {
+  padding: 1rem;
+}
+main .lista {
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+main .lista li {
+  padding: 1rem;
+  border: solid white;
+  list-style: none;
+  background-color: red;
+}
+main .noticias {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+main .noticias img {
+  height: 40%;
+  width: 80%;
+}
+main .noticias h2 {
+  display: flex;
+  position: relative;
+  font-size: 40px;
+}
+main .noticias p {
+  display: flex;
+  position: relative;
+  font-size: 25px;
+}
+main .partidos2022 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  border-style: solid;
+}
+main .partidos2022 li {
+  border-style: solid;
+  padding: 10px;
+  background-color: red;
+}
+main .contacto {
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+main .contacto li {
+  background-color: red;
+  padding: 5px;
+}
+
+footer {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  border-top: solid black;
+}
+footer ul li {
+  list-style: none;
+  display: inline;
+}
+
+@media screen and (min-width: 300px) and (max-width: 659px) {
+  main {
     height: 300vh;
-   }
-   .grid{
+  }
+  .grid {
     display: grid;
     grid-template-columns: 80%;
     grid-template-rows: 3fr 3fr 3fr 3fr;
     padding: 1.5rem;
-   }
-   .video{
+  }
+  .video {
     height: 60%;
     width: 100%;
-   }
-   .partidos__lista{
+  }
+  .partidos__lista {
     height: 40%;
     width: 50%;
     font-size: 15px;
     padding: 1rem;
-   }
-   .lista{
+  }
+  .lista {
     height: 20%;
     font-size: 14px;
-   }
+  }
 }
-@media screen and (min-width: 660px) and (max-width: 768px){
-       .video{
-        width: 100%;
-       }
-       .partidos__lista{
-        height: 60%;
-        width: 50%;
-        font-size: 25px;
-        padding: 1rem;
-       }
+@media screen and (min-width: 660px) and (max-width: 768px) {
+  .video {
+    width: 100%;
+  }
+  .partidos__lista {
+    height: 60%;
+    width: 50%;
+    font-size: 25px;
+    padding: 1rem;
+  }
 }
+
+/*# sourceMappingURL=estilo.css.map */
