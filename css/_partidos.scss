@@ -19,6 +19,21 @@
 .partidos__resumen{
     padding: 1rem;
 }
+@mixin sizes($width, $height, $bcolor) {
+    width: $width;
+    height: $height;
+    background-color: $bcolor;
+}
+
+.partido1{
+    @include sizes(100%, 100%, $color1)
+}
+.partido2{
+    @include sizes(100%,100% ,$color2 )
+}
+.partido3{
+    @include sizes(100%,100% , darkred )
+}
 .lista{
     display: flex;
     justify-content: space-between;

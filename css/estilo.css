@@ -129,6 +129,24 @@ main .tituloDeSeccion:hover {
   padding: 1rem;
 }
 
+.partido1 {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.partido2 {
+  width: 100%;
+  height: 100%;
+  background-color: coral;
+}
+
+.partido3 {
+  width: 100%;
+  height: 100%;
+  background-color: darkred;
+}
+
 .lista {
   display: flex;
   justify-content: space-between;
