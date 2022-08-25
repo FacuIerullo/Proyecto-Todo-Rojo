@@ -1,0 +1,49 @@
+.grid{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 50% 50%;
+    grid-area: auto;
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color3;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    div img:hover{
+            width: 80%;
+            transition: 0.5s;
+            box-shadow: black;
+            filter: brightness(50%);
+        }
+        .tituloDeNoticia{
+            font-size: 25px;
+            position: absolute;
+            text-align: center;
+            width: 70%;
+            text-shadow: 0 0 5px $color4;
+            visibility: hidden;
+            user-select: none;
+            text-align: center;
+            padding: 1rem;
+    
+        
+        }
+        .imagen_fija:hover{
+            width: 100%;
+        } 
+        .grid div:hover> .tituloDeNoticia{
+            visibility: visible;
+            text-align: center;
+            padding: 1rem;
+            transition: .5s;
+            opacity: 1;
+        }
+}

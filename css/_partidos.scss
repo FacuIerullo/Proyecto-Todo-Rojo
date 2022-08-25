@@ -1,0 +1,48 @@
+.partidos{
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color3;
+    font-size: 25px;
+    flex-direction: row;
+    align-items: center;
+
+    ul li{
+        border-style: solid;
+        border-color: $color3;
+        list-style: none;
+        padding: 1rem;
+        margin-right: 10%;
+        background-color: $color1;
+    }
+}
+.partidos__resumen{
+    padding: 1rem;
+}
+.lista{
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color3;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+
+    li{
+        padding: 1rem;
+        border: solid $color3;
+        list-style: none;
+        background-color: $color1;
+    }
+}
+.partidos2022{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color3;
+    border-style: solid;
+
+    li{
+    border-style: solid;
+    padding: 10px;
+    background-color: $color1;
+    }
+}

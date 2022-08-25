@@ -1,0 +1,36 @@
+@media screen and (min-width: 300px) and (max-width: 659px){
+    main{
+    height: 300vh;
+   }
+   .grid{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    padding: 1.5rem;
+   }
+   .video{
+    height: 60%;
+    width: 100%;
+   }
+   .partidos__lista{
+    height: 40%;
+    width: 50%;
+    font-size: 15px;
+    padding: 1rem;
+   }
+   .lista{
+    height: 20%;
+    font-size: 14px;
+   }
+}
+@media screen and (min-width: 660px) and (max-width: 768px){
+       .video{
+        width: 100%;
+       }
+       .partidos__lista{
+        height: 60%;
+        width: 50%;
+        font-size: 25px;
+        padding: 1rem;
+       }
+}

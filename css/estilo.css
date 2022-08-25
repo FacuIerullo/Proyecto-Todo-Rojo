@@ -18,21 +18,8 @@
 }
 .navbar h1 a:hover {
   background-color: coral;
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
-}
-.navbar .menu {
-  list-style: none;
-  font-size: 25px;
-}
-.navbar .menu li a {
-  padding: 1.5rem;
-  text-decoration: none;
-  color: white;
-}
-.navbar .menu li:hover {
-  color: black;
-  background-color: coral;
 }
 
 main {
@@ -45,73 +32,27 @@ main {
 main .tituloDeSeccion {
   font-size: 35px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
   font-weight: bold;
 }
 main .tituloDeSeccion:hover {
   background-color: coral;
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
-}
-main .grid {
-  display: grid;
-  grid-template-columns: 3fr 3fr;
-  grid-template-rows: 50% 50%;
-  grid-area: auto;
-  padding: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-}
-main .grid img {
-  width: 100%;
-  height: 100%;
-}
-main .grid div {
-  display: flex;
-  position: relative;
-  align-items: center;
-  padding: 0.5rem;
-}
-main .grid div img:hover {
-  width: 80%;
-  transition: 0.5s;
-  box-shadow: black;
-  filter: brightness(50%);
-}
-main .tituloDeNoticia {
-  font-size: 25px;
-  position: absolute;
-  text-align: center;
-  width: 70%;
-  text-shadow: 0 0 5px black;
-  visibility: hidden;
-  user-select: none;
-  text-align: center;
-  padding: 1rem;
-}
-main .imagen_fija:hover {
-  width: 100%;
-}
-main .grid div:hover > .tituloDeNoticia {
-  visibility: visible;
-  text-align: center;
-  padding: 1rem;
-  transition: 0.5s;
-  opacity: 1;
 }
 main .partidos {
   display: flex;
   justify-content: space-between;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: whitesmoke;
   font-size: 25px;
   flex-direction: row;
   align-items: center;
 }
 main .partidos ul li {
   border-style: solid;
-  border-color: white;
+  border-color: whitesmoke;
   list-style: none;
   padding: 1rem;
   margin-right: 10%;
@@ -124,20 +65,20 @@ main .lista {
   display: flex;
   justify-content: space-between;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: whitesmoke;
   font-size: 15px;
   display: flex;
   flex-direction: column;
 }
 main .lista li {
   padding: 1rem;
-  border: solid white;
+  border: solid whitesmoke;
   list-style: none;
   background-color: red;
 }
 main .noticias {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: whitesmoke;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -159,7 +100,7 @@ main .noticias p {
 }
 main .partidos2022 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: whitesmoke;
   border-style: solid;
 }
 main .partidos2022 li {
@@ -170,7 +111,7 @@ main .partidos2022 li {
 main .contacto {
   padding: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: whitesmoke;
 }
 main .contacto li {
   background-color: red;
@@ -223,6 +164,4 @@ footer ul li {
     font-size: 25px;
     padding: 1rem;
   }
-}
-
-/*# sourceMappingURL=estilo.css.map */
+}/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,23 @@
+.noticias{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    img{
+        height: 40%;
+        width: 80%;
+    }
+    h2{
+        display: flex;
+        position: relative;
+        font-size: 40px;
+    }
+    p{
+        display: flex;
+        position: relative;
+        font-size: 25px;
+    }
+}
