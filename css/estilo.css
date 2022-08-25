@@ -41,7 +41,73 @@ main .tituloDeSeccion:hover {
   color: whitesmoke;
   text-decoration: none;
 }
-main .partidos {
+
+.menu {
+  list-style: none;
+  font-size: 25px;
+}
+.menu li a {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.menu li:hover {
+  color: black;
+  background-color: coral;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 50% 50%;
+  grid-area: auto;
+  padding: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+}
+.grid img {
+  width: 100%;
+  height: 100%;
+}
+.grid div {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 0.5rem;
+}
+.grid div img:hover {
+  width: 80%;
+  transition: 0.5s;
+  box-shadow: black;
+  filter: brightness(50%);
+}
+.grid .tituloDeNoticia {
+  font-size: 25px;
+  color: whitesmoke;
+  position: absolute;
+  text-align: center;
+  width: 70%;
+  text-shadow: 0 0 5px black;
+  visibility: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  padding: 1rem;
+}
+.grid .imagen_fija:hover {
+  width: 100%;
+}
+.grid div:hover > .tituloDeNoticia {
+  visibility: visible;
+  text-align: center;
+  padding: 1rem;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.partidos {
   display: flex;
   justify-content: space-between;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -50,7 +116,7 @@ main .partidos {
   flex-direction: row;
   align-items: center;
 }
-main .partidos ul li {
+.partidos ul li {
   border-style: solid;
   border-color: whitesmoke;
   list-style: none;
@@ -58,10 +124,12 @@ main .partidos ul li {
   margin-right: 10%;
   background-color: red;
 }
-main .partidos__resumen {
+
+.partidos__resumen {
   padding: 1rem;
 }
-main .lista {
+
+.lista {
   display: flex;
   justify-content: space-between;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -70,13 +138,25 @@ main .lista {
   display: flex;
   flex-direction: column;
 }
-main .lista li {
+.lista li {
   padding: 1rem;
   border: solid whitesmoke;
   list-style: none;
   background-color: red;
 }
-main .noticias {
+
+.partidos2022 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  border-style: solid;
+}
+.partidos2022 li {
+  border-style: solid;
+  padding: 10px;
+  background-color: red;
+}
+
+.noticias {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: whitesmoke;
   display: flex;
@@ -84,43 +164,41 @@ main .noticias {
   flex-direction: column;
   padding: 1rem;
 }
-main .noticias img {
+.noticias img {
   height: 40%;
   width: 80%;
 }
-main .noticias h2 {
+.noticias h2 {
   display: flex;
   position: relative;
   font-size: 40px;
 }
-main .noticias p {
+.noticias p {
   display: flex;
   position: relative;
   font-size: 25px;
 }
-main .partidos2022 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: whitesmoke;
-  border-style: solid;
-}
-main .partidos2022 li {
-  border-style: solid;
-  padding: 10px;
-  background-color: red;
-}
-main .contacto {
+
+.contacto {
   padding: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: whitesmoke;
 }
-main .contacto li {
+.contacto li {
   background-color: red;
   padding: 5px;
 }
 
+aside {
+  margin: 2%;
+}
+
+section {
+  margin: 2%;
+}
+
 footer {
   display: flex;
-  font-size: 20px;
   justify-content: center;
   border-top: solid black;
 }
@@ -164,4 +242,33 @@ footer ul li {
     font-size: 25px;
     padding: 1rem;
   }
+}
+.btn--20px {
+  background-color: red;
+  font-size: 20px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1.5rem;
+  border: solid;
+  margin: 5%;
+}
+
+.btn--21px {
+  background-color: red;
+  font-size: 21px;
+  color: pink;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1.5rem;
+  border: solid;
+  margin: 5%;
+}
+
+.btn--22px {
+  background-color: red;
+  font-size: 22px;
+  color: lightblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1.5rem;
+  border: solid;
+  margin: 5%;
 }/*# sourceMappingURL=estilo.css.map */

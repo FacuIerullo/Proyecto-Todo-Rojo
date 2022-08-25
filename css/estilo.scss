@@ -44,15 +44,31 @@ main{
         background-color: $color2;
         color: $color3;
         text-decoration: none;
-        
     }
 }
 
 @import "_menu";
-@import "_grid"
-@import "_partidos"
-@import "_noticias"
-@import "_contacto"
-@import "_footer"
-@import "_media"
+@import "_grid";
+@import "_partidos";
+@import "_noticias";
+@import "_contacto";
+@import "_footer";
+@import "_media";
 
+$contacto:(
+    20px:white,
+    21px:pink,
+    22px:lightblue,
+);
+
+@each $csize, $ccolor in $contacto {
+    .btn--#{$csize} {
+        background-color: $color1;
+        font-size: $csize;
+        color: $ccolor;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 1.5rem;
+        border: solid;
+        margin: 5%;
+    }
+};

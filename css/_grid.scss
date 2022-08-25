@@ -25,6 +25,7 @@
         }
         .tituloDeNoticia{
             font-size: 25px;
+            color: $color3;
             position: absolute;
             text-align: center;
             width: 70%;
@@ -39,7 +40,7 @@
         .imagen_fija:hover{
             width: 100%;
         } 
-        .grid div:hover> .tituloDeNoticia{
+        div:hover> .tituloDeNoticia{
             visibility: visible;
             text-align: center;
             padding: 1rem;
