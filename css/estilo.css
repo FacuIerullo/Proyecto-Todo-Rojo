@@ -196,13 +196,17 @@ main .tituloDeSeccion:hover {
 }
 
 .partidos2022 {
+  display: flex;
+  vertical-align: middle;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: whitesmoke;
   border-style: solid;
+  text-align: center;
+  margin: 2%;
+  position: relative;
 }
 .partidos2022 li {
-  border-style: solid;
-  padding: 10px;
+  padding: 5px;
   background-color: red;
 }
 

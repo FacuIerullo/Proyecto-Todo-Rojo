@@ -51,13 +51,18 @@
     }
 }
 .partidos2022{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: $color3;
-    border-style: solid;
-
-    li{
-    border-style: solid;
-    padding: 10px;
-    background-color: $color1;
-    }
+        display: flex;
+        vertical-align: middle;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: $color3;
+        border-style: solid;
+        text-align: center;
+        margin: 2%;
+        position: relative;
+    
+        li{
+        padding: 5px;
+        background-color: $color1;
+        }
 }
+
