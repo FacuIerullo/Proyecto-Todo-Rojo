@@ -195,19 +195,50 @@ main .tituloDeSeccion:hover {
   background-color: red;
 }
 
-.partidos2022 {
+.partidosTablas {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  padding: 1rem;
+}
+.partidosTablas .partidos2022 {
   display: flex;
-  vertical-align: middle;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: whitesmoke;
   border-style: solid;
-  text-align: center;
+  text-align: left;
   margin: 2%;
   position: relative;
+  width: 80%;
 }
-.partidos2022 li {
+.partidosTablas .partidos2022 li {
   padding: 5px;
   background-color: red;
+}
+.partidosTablas .table {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  border-style: solid;
+  position: relative;
+  width: 80%;
+  font-size: 12px;
+}
+.partidosTablas .table td {
+  background-color: red;
+  border: solid;
+}
+.partidosTablas .table th {
+  background-color: red;
+  border: solid;
+}
+.partidosTablas .table .Independiente {
+  font-weight: bolder;
+}
+.partidosTablas .table .Independiente td {
+  background-color: darkred;
+}
+.partidosTablas .table .Independiente th {
+  background-color: darkred;
 }
 
 .noticias {
@@ -285,6 +316,11 @@ footer ul li {
     height: 20%;
     font-size: 14px;
   }
+  .partidosTablas {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    font-size: 11px;
+  }
 }
 @media screen and (min-width: 660px) and (max-width: 768px) {
   .video {
@@ -295,6 +331,12 @@ footer ul li {
     width: 50%;
     font-size: 25px;
     padding: 1rem;
+  }
+  .partidosTablas {
+    display: grid;
+    grid-template-columns: 50% 30%;
+    grid-template-rows: 50%;
+    font-size: 11px;
   }
 }
 .btn--20px {
