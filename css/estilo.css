@@ -23,8 +23,6 @@
 }
 
 main {
-  height: 235vh;
-  width: 100%;
   background-color: red;
   background-image: url(../img/todorojo.png);
   background-size: cover;
@@ -35,6 +33,9 @@ main .tituloDeSeccion {
   color: whitesmoke;
   text-decoration: none;
   font-weight: bold;
+  background-color: red;
+  border: solid;
+  margin: 0.5rem;
 }
 main .tituloDeSeccion:hover {
   background-color: coral;
@@ -92,9 +93,6 @@ main .tituloDeSeccion:hover {
   user-select: none;
   padding: 1rem;
 }
-.grid .imagen_fija:hover {
-  width: 100%;
-}
 .grid div:hover > .tituloDeNoticia {
   visibility: visible;
   text-align: center;
@@ -103,35 +101,37 @@ main .tituloDeSeccion:hover {
   opacity: 1;
 }
 
-.noticiasAside img {
-  width: 100%;
-  height: 100%;
-}
-.noticiasAside div {
+.noticia5 {
   display: flex;
-  position: absolute;
-  padding: 1.5rem;
+  position: relative;
+  justify-content: center;
   align-items: center;
+  padding: 1.5rem;
 }
-.noticiasAside div img:hover {
+.noticia5 img {
+  height: 100%;
+  width: 100%;
+}
+.noticia5 div img:hover {
   width: 90%;
   height: 90%;
   transition: 0.5s;
   box-shadow: black;
   filter: brightness(50%);
 }
-.noticiasAside .tituloDeNoticia {
+.noticia5 .tituloDeNoticia {
   font-size: 25px;
   color: whitesmoke;
   position: absolute;
-  width: 70%;
+  text-align: center;
+  width: 40;
+  bottom: 45%;
   text-shadow: 0 0 5px black;
   visibility: hidden;
   user-select: none;
-  text-align: left;
   padding: 1rem;
 }
-.noticiasAside div:hover > .tituloDeNoticia {
+.noticia5 div:hover > .tituloDeNoticia {
   visibility: visible;
   text-align: center;
   padding: 1rem;
@@ -187,6 +187,7 @@ main .tituloDeSeccion:hover {
   font-size: 15px;
   display: flex;
   flex-direction: column;
+  padding: 0.5rem;
 }
 .lista li {
   padding: 1rem;
@@ -199,7 +200,7 @@ main .tituloDeSeccion:hover {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .partidosTablas .partidos2022 {
   display: flex;
@@ -207,7 +208,6 @@ main .tituloDeSeccion:hover {
   color: whitesmoke;
   border-style: solid;
   text-align: left;
-  margin: 2%;
   position: relative;
   width: 80%;
 }
@@ -285,7 +285,7 @@ section {
 footer {
   display: flex;
   justify-content: center;
-  border-top: solid black;
+  position: absolute;
 }
 footer ul li {
   list-style: none;
@@ -293,9 +293,6 @@ footer ul li {
 }
 
 @media screen and (min-width: 300px) and (max-width: 659px) {
-  main {
-    height: 300vh;
-  }
   .grid {
     display: grid;
     grid-template-columns: 80%;
@@ -320,6 +317,10 @@ footer ul li {
     display: grid;
     grid-template-columns: 40% 40%;
     font-size: 11px;
+  }
+  .noticia5 .tituloDeNoticia {
+    font-size: 20px;
+    width: 50%;
   }
 }
 @media screen and (min-width: 660px) and (max-width: 768px) {

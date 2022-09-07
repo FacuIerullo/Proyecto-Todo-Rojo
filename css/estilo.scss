@@ -27,8 +27,6 @@ $color4: black;
 }
 
 main{
-    height: 235vh;
-    width: 100%;
     background-color: $color1;
     background-image: url(../img/todorojo.png);
     background-size: cover;
@@ -39,6 +37,9 @@ main{
         color: $color3;
         text-decoration: none;
         font-weight: bold;
+        background-color: $color1;
+        border: solid;
+        margin: 0.5rem;
     }
     .tituloDeSeccion:hover{
         background-color: $color2;
@@ -46,7 +47,6 @@ main{
         text-decoration: none;
     }
 }
-
 @import "_menu";
 @import "_grid";
 @import "_partidos";
