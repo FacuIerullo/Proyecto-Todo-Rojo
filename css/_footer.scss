@@ -1,10 +1,22 @@
 footer{
     display: flex;
-    justify-content: center;
-    position: absolute;
+    background-color: $color1;
+    padding: 1%;
+    color: $color3;
+    font-size: 20px;
+
+    a{
+        color: $color3;
+    }
  
     ul li{
         list-style: none;
         display: inline;
+        padding: 1%;
+    }
+
+    ul li a{
+        color: $color3;
+        font-size: 20px;
     }
 }

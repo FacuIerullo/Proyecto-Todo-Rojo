@@ -30,6 +30,7 @@ main{
     background-color: $color1;
     background-image: url(../img/todorojo.png);
     background-size: cover;
+    overflow: hidden;
 
     .tituloDeSeccion{
         font-size: 35px;

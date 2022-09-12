@@ -26,6 +26,7 @@ main {
   background-color: red;
   background-image: url(../img/todorojo.png);
   background-size: cover;
+  overflow: hidden;
 }
 main .tituloDeSeccion {
   font-size: 35px;
@@ -252,16 +253,24 @@ main .tituloDeSeccion:hover {
 .noticias img {
   height: 40%;
   width: 80%;
+  border: solid;
 }
 .noticias h2 {
   display: flex;
   position: relative;
   font-size: 40px;
+  border: solid;
+  background-color: red;
+  margin: 2%;
+  padding: 1%;
 }
 .noticias p {
   display: flex;
   position: relative;
   font-size: 25px;
+  background-color: red;
+  border: solid;
+  padding: 1%;
 }
 
 .contacto {
@@ -284,12 +293,22 @@ section {
 
 footer {
   display: flex;
-  justify-content: center;
-  position: absolute;
+  background-color: red;
+  padding: 1%;
+  color: whitesmoke;
+  font-size: 20px;
+}
+footer a {
+  color: whitesmoke;
 }
 footer ul li {
   list-style: none;
   display: inline;
+  padding: 1%;
+}
+footer ul li a {
+  color: whitesmoke;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 659px) {

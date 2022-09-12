@@ -9,15 +9,23 @@
         img{
             height: 40%;
             width: 80%;
+            border: solid;
         }
         h2{
             display: flex;
             position: relative;
             font-size: 40px;
+            border: solid;
+            background-color: $color1;
+            margin: 2%;
+            padding: 1%;
         }
         p{
             display: flex;
             position: relative;
             font-size: 25px;
+            background-color: $color1;
+            border: solid;
+            padding: 1%;
         }
     }
